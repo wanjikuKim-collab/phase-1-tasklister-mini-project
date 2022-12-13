@@ -2,13 +2,23 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 })
 
-const createMenu=()=>{
-    const image = document.createElement("img");
-    const menu = document.querySelector(".cocktail-menu");
-    image.attributes("src", "cocktail.strDrinkThumb");
-    menu.appendChild("image");
-    
-    return menu
-}
+function fetchCocktail(){
+    fetch("")
+    .then(
+    function(response) {
+        if (response.status !== 200) {
+        console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+        return;
+        }
 
-let 
+        // Examine the text in the response
+        response.json().then(function(data) {
+        console.log(data);
+        });
+    }
+    )
+    .catch(function(err) {
+    console.log('Fetch Error :-S', err);
+    });
+}

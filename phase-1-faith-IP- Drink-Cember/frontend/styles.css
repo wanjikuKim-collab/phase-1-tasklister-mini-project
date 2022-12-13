@@ -1,5 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    background-color:rgb(190, 190, 190);
+    background-color: rgb(199, 187, 187);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
 }
