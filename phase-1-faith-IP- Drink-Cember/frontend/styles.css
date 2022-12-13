@@ -8,3 +8,7 @@ nav{
     display: flex;
     justify-content: space-between;
 }
+
+h3{
+    text-align: center;
+}
