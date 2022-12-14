@@ -95,9 +95,92 @@ body{
     color:#50583b
 }
 
-/* cocktail details styling */
+/* cocktail details */
+.cocktail-details{
+    background-color: #AE6661;
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y:scroll;
+    display: none;
+    padding: 2rem 0;
+}
+
+.cocktail-details p{
+    padding: 1rem 0;
+}
+
+.cocktail-details::-webkit-scrollbar{
+    width: 15px;
+}
+
+.cocktail-details::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 2rem;
+}
+
+.showRecipe{
+    display: block;
+}
+
+.cocktail-details-content{
+    margin: 2rem;
+}
+
+.cocktail-details-content p:not(.recipe-category){
+    margin: 2rem;
+}
+
+
+.recipe-close-btn{
+    font-size: 2rem;
+    background-color: #3B4C58;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.recipe-category{
+    background: white;
+    font-weight: 100;
+    color: #442123;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+
+}
+
+.recipe-instructions{
+    padding: 0.8rem 0;
+}
+
+.recipe-cocktail-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.recipe-link{
+    margin-top: 30px;
+}
+
+.recipe-link a{
+    color: white;
+}
+
+
+/* cocktails items styling */
 .cocktail-result{
     margin-top: 4rem;
+    font-size: 1.2rem;
+    font-size: 700;
 }
 
 #cocktail{
@@ -126,7 +209,7 @@ body{
 
 }
 
-.recipe-link{
+.recipe-btn{
     text-decoration: none;
     color: white;
     background: var(--charcoal);
@@ -139,7 +222,7 @@ body{
     border-radius: 1.5rem;
 }
 
-.recipe-link:hover{
+.recipe-btn:hover{
     background: var(--charcoal-light);
     color: rgb(233, 207, 207);
 }
@@ -162,6 +245,9 @@ body{
     }
     .cocktail-item{
         margin: 0;
+    }
+    .cocktail-details{
+        width:auto;
     }
 }
 
